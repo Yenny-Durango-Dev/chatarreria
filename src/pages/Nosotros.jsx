@@ -1,68 +1,84 @@
-
 function Nosotros() {
   return (
-    <section id="nosotros" className="py-16 bg-gradient-to-b from-gray-600 via-gray-700 to-gray-600 text-gray-200">
+    <section
+      id="nosotros"
+      className="py-16 bg-[#303030] text-[#D4D3CE]"
+    >
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Título */}
-        <h1 className="text-4xl font-extrabold mb-10 
-                       bg-clip-text text-transparent 
-                       bg-gradient-to-r from-yellow-300 to-yellow-500 drop-shadow-lg">
+        <h1
+          className="text-4xl font-extrabold mb-10 
+                     bg-clip-text text-transparent 
+                     bg-gradient-to-r from-[#986F31] to-[#D4D3CE] drop-shadow-lg"
+        >
           ⚙️ Sobre Nosotros
         </h1>
 
         {/* Texto descriptivo */}
-        <p className="text-gray-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-[#D4D3CE] mb-12 max-w-3xl mx-auto">
           En{" "}
-          <span className="font-semibold text-yellow-400">
-            Chatarrería Euklidez
+          <span className="font-semibold text-[#986F31]">
+            Chatarrería La Paz
           </span>{" "}
           contamos con más de{" "}
-          <strong className="text-yellow-300">10 años de experiencia</strong>{" "}
+          <strong className="text-[#986F31]">10 años de experiencia</strong>{" "}
           en el reciclaje de metales. Nuestro compromiso es con el{" "}
-          <span className="text-yellow-400 font-semibold">medio ambiente</span>,
+          <span className="text-[#986F31] font-semibold">medio ambiente</span>,
           ofreciendo precios justos y un servicio confiable.
         </p>
 
         {/* Tarjetas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-black 
-                          p-6 rounded-xl shadow-lg border border-gray-700 
-                          hover:scale-105 hover:shadow-yellow-400/30 transition">
-            <h2 className="text-xl font-semibold mb-3 
-                           bg-clip-text text-transparent 
-                           bg-gradient-to-r from-yellow-300 to-yellow-500">
+          <div
+            className="bg-gradient-to-br from-[#273848] to-[#303030] 
+                       p-6 rounded-xl shadow-lg border border-[#986F31]/50 
+                       hover:scale-105 hover:shadow-[#986F31]/30 transition"
+          >
+            <h2
+              className="text-xl font-semibold mb-3 
+                         bg-clip-text text-transparent 
+                         bg-gradient-to-r from-[#986F31] to-[#D4D3CE]"
+            >
               🌱 Responsabilidad
             </h2>
-            <p className="text-gray-300">
+            <p className="text-[#D4D3CE]">
               Reciclamos metales cuidando el planeta.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-black 
-                          p-6 rounded-xl shadow-lg border border-gray-700 
-                          hover:scale-105 hover:shadow-yellow-400/30 transition">
-            <h2 className="text-xl font-semibold mb-3 
-                           bg-clip-text text-transparent 
-                           bg-gradient-to-r from-yellow-300 to-yellow-500">
+          <div
+            className="bg-gradient-to-br from-[#273848] to-[#303030] 
+                       p-6 rounded-xl shadow-lg border border-[#986F31]/50 
+                       hover:scale-105 hover:shadow-[#986F31]/30 transition"
+          >
+            <h2
+              className="text-xl font-semibold mb-3 
+                         bg-clip-text text-transparent 
+                         bg-gradient-to-r from-[#986F31] to-[#D4D3CE]"
+            >
               💰 Transparencia
             </h2>
-            <p className="text-gray-300">
+            <p className="text-[#D4D3CE]">
               Precios claros y competitivos siempre.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-black 
-                          p-6 rounded-xl shadow-lg border border-gray-700 
-                          hover:scale-105 hover:shadow-yellow-400/30 transition">
-            <h2 className="text-xl font-semibold mb-3 
-                           bg-clip-text text-transparent 
-                           bg-gradient-to-r from-yellow-300 to-yellow-500">
+          <div
+            className="bg-gradient-to-br from-[#273848] to-[#303030] 
+                       p-6 rounded-xl shadow-lg border border-[#986F31]/50 
+                       hover:scale-105 hover:shadow-[#986F31]/30 transition"
+          >
+            <h2
+              className="text-xl font-semibold mb-3 
+                         bg-clip-text text-transparent 
+                         bg-gradient-to-r from-[#986F31] to-[#D4D3CE]"
+            >
               🚛 Servicio
             </h2>
-            <p className="text-gray-300">
+            <p className="text-[#D4D3CE]">
               Recolección a domicilio rápida y segura.
             </p>
           </div>

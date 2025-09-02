@@ -17,39 +17,40 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full z-50">
       <nav
         className="flex items-center justify-between px-6 py-4 shadow-md 
-                   bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 
-                   border-b-2 border-gray-600"
+                   bg-gradient-to-r from-[#303030] via-[#273848] to-[#303030] 
+                   border-b-2 border-[#986F31]/50"
       >
         {/* Logo */}
         <div
           className="text-2xl font-extrabold tracking-wide 
                      bg-clip-text text-transparent 
-                     bg-gradient-to-r from-gray-100 to-gray-400 drop-shadow-lg"
+                     bg-gradient-to-r from-[#D4D3CE] to-[#986F31] drop-shadow-lg"
         >
-          Chatarrería Euklidez
+          Chatarrería La Paz
         </div>
 
         {/* Links desktop */}
-        <ul className="hidden md:flex gap-6 text-gray-200 font-medium">
+        <ul className="hidden md:flex gap-6 text-[#D4D3CE] font-medium">
           {links.map((link) => (
             <li key={link.to} className="relative group">
               <Link
                 to={link.to}
                 smooth={true}
                 duration={600}
-                offset={-80} // ajusta según la altura del navbar
-                className="cursor-pointer hover:text-yellow-400 transition-colors"
+                offset={-80}
+                className="cursor-pointer hover:text-[#986F31] transition-colors"
               >
                 {link.name}
               </Link>
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"></span>
+              {/* Línea inferior en hover */}
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#986F31] transition-all group-hover:w-full"></span>
             </li>
           ))}
         </ul>
 
         {/* Botón hamburguesa (mobile) */}
         <button
-          className="md:hidden text-gray-200"
+          className="md:hidden text-[#D4D3CE]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -58,8 +59,8 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-r from-gray-800 to-gray-900 shadow-md">
-          <ul className="flex flex-col gap-4 px-6 py-4 text-gray-200 font-medium">
+        <div className="md:hidden bg-gradient-to-r from-[#303030] to-[#273848] shadow-md">
+          <ul className="flex flex-col gap-4 px-6 py-4 text-[#D4D3CE] font-medium">
             {links.map((link) => (
               <li key={link.to}>
                 <Link
@@ -67,8 +68,8 @@ const Navbar = () => {
                   smooth={true}
                   duration={600}
                   offset={-80}
-                  onClick={() => setIsOpen(false)} // cerrar menú al dar clic
-                  className="cursor-pointer hover:text-yellow-400 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                  className="cursor-pointer hover:text-[#986F31] transition-colors"
                 >
                   {link.name}
                 </Link>
