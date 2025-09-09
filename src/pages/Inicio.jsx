@@ -32,31 +32,37 @@ const Inicio = () => {
           <span className="font-semibold text-[#986F31]">
             Chatarrería La Paz
           </span>{" "}
-          compramos y reciclamos metales de forma responsable, garantizando los
-          mejores precios del mercado.
+          compramos y reciclamos metales como cobre, bronce, aluminio, hierro y
+          más. Servicio a domicilio los{" "}
+          <span className="text-[#EBBE62] font-semibold">7 días de la semana</span>{" "}
+          y los mejores precios del mercado.
         </p>
 
         {/* Botones */}
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
           {/* Botón principal */}
-          <button
+          <a
+            href="https://wa.me/573128136299?text=Hola,%20quiero%20una%20cotización%20de%20material"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-[#986F31] to-[#D4D3CE] 
                        text-[#303030] px-6 py-3 rounded-md font-semibold 
                        shadow-lg hover:scale-105 hover:shadow-[#986F31]/50 
                        transition cursor-pointer"
           >
-            Cotizar ahora
-          </button>
+            Cotizar ahora 📲
+          </a>
 
           {/* Botón secundario */}
-          <button
+          <a
+            href="#contacto"
             className="bg-transparent border-2 border-[#986F31] 
                        text-[#986F31] px-6 py-3 rounded-md font-semibold 
                        shadow-lg hover:bg-[#986F31] hover:text-[#303030] 
                        transition cursor-pointer"
           >
             Contacto rápido
-          </button>
+          </a>
         </div>
       </div>
     </section>

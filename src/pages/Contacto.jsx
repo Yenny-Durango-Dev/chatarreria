@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Clock } from "lucide-react"; // íconos bonitos
+import { MapPin, Phone, Clock, Mail } from "lucide-react"; // íconos bonitos
 import ChatarreriaLaPaz from "../assets/chatarrerialapaz.png";
 
 function Contacto() {
@@ -51,11 +51,15 @@ function Contacto() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-6 h-6 text-[#986F31]" />
-                <span>+57 312 8136299</span>
+                <a href="tel:+573128136299" className="hover:text-[#986F31]">+57 312 8136299</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-6 h-6 text-[#986F31]" />
+                <a href="mailto:euklidezorozco@gmail.com" className="hover:text-[#986F31]">euklidezorozco@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-6 h-6 text-[#986F31]" />
-                <span>Lunes a Sábado: 8:00am – 6:00pm</span>
+                <span>Todos los días: 8:00am – 6:00pm</span>
               </li>
             </ul>
 

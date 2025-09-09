@@ -38,6 +38,15 @@ function Footer() {
             <MapPin size={16} /> Cl. 57 # 53-32, La Candelaria, Medellín
           </a>
 
+          {/* Dirección con link a Gmail */}
+          <a
+            href="mailto:euklidezorozco@gmail.com"
+            className="flex items-center gap-2 hover:text-[#986F31] transition-colors"
+          >
+            <Mail size={16} /> euklidezorozco@gmail.com
+          </a>
+
+
           {/* Teléfono con link a WhatsApp */}
           <a
             href="https://wa.me/573128136299"
@@ -49,6 +58,7 @@ function Footer() {
           </a>
 
           <p className="mt-3 text-[#D4D3CE]/70">🕒Horarios</p>
+          <p>Lunes - Domingo</p>
         </div>
 
         {/* Columna 3: Enlaces rápidos */}

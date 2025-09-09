@@ -1,24 +1,30 @@
 import React from "react";
-import { Truck, Recycle, Package } from "lucide-react";
+import { Truck, Recycle, Package, Wrench } from "lucide-react";
 
 function Servicios() {
   const servicios = [
     {
       titulo: "Compra de chatarra",
       emoji: "🏗️",
-      desc: "Hierro, cobre, aluminio, bronce y más. Pagamos los mejores precios del mercado.",
+      desc: "Adquirimos cobre, bronce, aluminio, plomo, radiadores, motores eléctricos, archivo y material de patio.",
       icon: <Recycle size={40} className="text-[#986F31]" />, // dorado
+    },
+    {
+      titulo: "Compra de materiales de construcción",
+      emoji: "🛠️",
+      desc: "Compramos tubería metálica, tacos, serchas, andamios, concretadoras, varillas y saldos industriales.",
+      icon: <Wrench size={40} className="text-[#EBBE62]" />, // dorado claro
     },
     {
       titulo: "Venta de materiales reciclados",
       emoji: "🔩",
-      desc: "Materiales procesados y listos para reutilizar en nuevas industrias.",
+      desc: "Ofrecemos materiales reciclados y listos para ser reutilizados en nuevas industrias.",
       icon: <Package size={40} className="text-[#D4D3CE]" />, // gris claro
     },
     {
       titulo: "Recolección a domicilio",
       emoji: "🚛",
-      desc: "Vamos hasta tu ubicación para recoger tu chatarra. Rápido, fácil y seguro.",
+      desc: "Vamos hasta tu ubicación para recoger la chatarra. Rápido, fácil y seguro.",
       icon: <Truck size={40} className="text-[#4c7ead]" />, // azul grisáceo
     },
   ];
@@ -41,12 +47,11 @@ function Servicios() {
           <span className="font-semibold text-[#986F31]">
             Chatarrería La Paz
           </span>{" "}
-          ofrecemos soluciones rápidas, confiables y responsables para reciclar
-          y aprovechar los metales.
+          trabajamos los <span className="text-[#EBBE62] font-semibold">7 días de la semana</span>, ofreciendo soluciones rápidas, confiables y responsables para reciclar y aprovechar los metales.
         </p>
 
         {/* Cards */}
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {servicios.map((s, index) => (
             <div
               key={index}
@@ -65,6 +70,18 @@ function Servicios() {
             </div>
           ))}
         </div>
+        <a
+          href="https://wa.me/573128136299"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-12 bg-gradient-to-r from-[#EBBE62] to-[#986F31] 
+             text-[#1A1A1A] px-6 py-3 rounded-md font-semibold 
+             shadow-lg hover:scale-105 hover:shadow-[#EBBE62]/50 
+             transition cursor-pointer"
+        >
+          Solicitar un Servicio 🚀
+        </a>
+
       </div>
     </section>
   );
