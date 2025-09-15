@@ -2,7 +2,7 @@ import Chatarra2 from "../assets/chatarra1.jpg";
 
 const Inicio = () => {
   return (
-    <section id="inicio" className="relative bg-[#303030]">
+    <section id="inicio" className="relative bg-white">
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <img
@@ -10,31 +10,28 @@ const Inicio = () => {
           alt="Chatarra metálica"
           className="w-full h-full object-cover"
         />
-        {/* Overlay metálico */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#303030]/90 via-[#273848]/70 to-[#303030]/95"></div>
+        {/* Overlay oscuro para contraste */}
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Contenido */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 text-center">
-        {/* Título con estilo metálico */}
-        <h1
-          className="text-4xl md:text-6xl font-extrabold 
-                     bg-clip-text text-transparent 
-                     bg-gradient-to-r from-[#D4D3CE] via-[#986F31] to-[#D4D3CE] 
-                     drop-shadow-lg"
-        >
+        {/* Título */}
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
           Reciclaje de Metales con Confianza
         </h1>
 
         {/* Texto */}
-        <p className="mt-6 text-lg md:text-xl text-[#D4D3CE] max-w-2xl mx-auto">
+        <p className="mt-6 text-lg md:text-xl text-white max-w-2xl mx-auto">
           En{" "}
-          <span className="font-semibold text-[#986F31]">
-            Chatarrería La Paz
+          <span className="font-semibold text-[#FFD600]">
+            Chatarrería Los Puentes
           </span>{" "}
           compramos y reciclamos metales como cobre, bronce, aluminio, hierro y
           más. Servicio a domicilio los{" "}
-          <span className="text-[#EBBE62] font-semibold">7 días de la semana</span>{" "}
+          <span className="text-[#FFD600] font-semibold">
+            7 días de la semana
+          </span>{" "}
           y los mejores precios del mercado.
         </p>
 
@@ -45,9 +42,8 @@ const Inicio = () => {
             href="https://wa.me/573128136299?text=Hola,%20quiero%20una%20cotización%20de%20material"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-[#986F31] to-[#D4D3CE] 
-                       text-[#303030] px-6 py-3 rounded-md font-semibold 
-                       shadow-lg hover:scale-105 hover:shadow-[#986F31]/50 
+            className="bg-[#2E7D32] text-white px-6 py-3 rounded-md font-semibold 
+                       shadow-lg hover:bg-[#FFD600] hover:text-black 
                        transition cursor-pointer"
           >
             Cotizar ahora 📲
@@ -56,9 +52,9 @@ const Inicio = () => {
           {/* Botón secundario */}
           <a
             href="#contacto"
-            className="bg-transparent border-2 border-[#986F31] 
-                       text-[#986F31] px-6 py-3 rounded-md font-semibold 
-                       shadow-lg hover:bg-[#986F31] hover:text-[#303030] 
+            className="border-2 border-[#FFD600] text-[#FFD600] px-6 py-3 
+                       rounded-md font-semibold shadow-lg 
+                       hover:bg-[#FFD600] hover:text-black 
                        transition cursor-pointer"
           >
             Contacto rápido

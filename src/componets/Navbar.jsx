@@ -14,23 +14,17 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
-      <nav
-        className="flex items-center justify-between px-6 py-4 shadow-md 
-                   bg-gradient-to-r from-[#303030] via-[#273848] to-[#303030] 
-                   border-b-2 border-[#986F31]/50"
-      >
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+      <nav className="flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div
-          className="text-2xl font-extrabold tracking-wide 
-                     bg-clip-text text-transparent 
-                     bg-gradient-to-r from-[#D4D3CE] to-[#986F31] drop-shadow-lg"
+          className="text-2xl font-extrabold tracking-wide text-[#2E7D32]"
         >
-          Chatarrería La Paz
+          Chatarrería Los Puentes
         </div>
 
         {/* Links desktop */}
-        <ul className="hidden md:flex gap-6 text-[#D4D3CE] font-medium">
+        <ul className="hidden md:flex gap-6 text-black font-medium">
           {links.map((link) => (
             <li key={link.to} className="relative group">
               <Link
@@ -38,19 +32,19 @@ const Navbar = () => {
                 smooth={true}
                 duration={600}
                 offset={-80}
-                className="cursor-pointer hover:text-[#986F31] transition-colors"
+                className="cursor-pointer hover:text-[#FFD600] transition-colors"
               >
                 {link.name}
               </Link>
               {/* Línea inferior en hover */}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#986F31] transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#FFD600] transition-all group-hover:w-full"></span>
             </li>
           ))}
         </ul>
 
         {/* Botón hamburguesa (mobile) */}
         <button
-          className="md:hidden text-[#D4D3CE]"
+          className="md:hidden text-[#2E7D32]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -59,8 +53,8 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-r from-[#303030] to-[#273848] shadow-md">
-          <ul className="flex flex-col gap-4 px-6 py-4 text-[#D4D3CE] font-medium">
+        <div className="md:hidden bg-[#2E7D32]">
+          <ul className="flex flex-col gap-4 px-6 py-4 text-white font-medium">
             {links.map((link) => (
               <li key={link.to}>
                 <Link
@@ -69,7 +63,7 @@ const Navbar = () => {
                   duration={600}
                   offset={-80}
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer hover:text-[#986F31] transition-colors"
+                  className="cursor-pointer hover:text-[#FFD600] transition-colors"
                 >
                   {link.name}
                 </Link>
