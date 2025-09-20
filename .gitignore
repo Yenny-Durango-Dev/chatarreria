@@ -1,0 +1,25 @@
+# --- Dependencias ---
+node_modules/
+
+# --- Builds ---
+dist/
+build/
+
+# --- Archivos de logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Archivos temporales del sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos de entorno ---
+.env
+.env.local
+.env.*.local
+
+# --- Archivos de Vite ---
+.vite/
+*.local
