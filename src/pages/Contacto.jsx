@@ -7,14 +7,14 @@ function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const telefono = "573128136299";
+    const telefono = "573017910078";
     const texto = `Hola, soy ${nombre}. ${mensaje}`;
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blank");
   };
 
   return (
-    <section id="contacto" className="py-16 bg-white text-black">
+    <section id="contacto" className="py-16 bg-gray-300 text-black">
       <div className="max-w-6xl mx-auto px-6">
         {/* Título principal */}
         <h1 className="text-4xl font-extrabold text-center mb-12 text-[#2E7D32]">
@@ -31,8 +31,8 @@ function Contacto() {
             <ul className="space-y-5">
               <li className="flex items-center gap-3">
                 <Phone className="w-6 h-6 text-[#FFD600]" />
-                <a href="tel:+573128136299" className="hover:text-[#FFD600]">
-                  +57 312 8136299
+                <a href="tel:+573017910078" className="hover:text-[#FFD600]">
+                  +57 301 7910079
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -53,7 +53,7 @@ function Contacto() {
             {/* Extra: mini CTA */}
             <div className="mt-6 text-center">
               <a
-                href="https://wa.me/573128136299"
+                href="https://wa.me/573017910078"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#2E7D32] px-6 py-3 rounded-lg shadow-md font-semibold text-white hover:bg-[#FFD600] hover:text-black transition"

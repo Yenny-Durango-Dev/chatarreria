@@ -10,7 +10,7 @@ function Nosotros() {
         {/* Texto descriptivo */}
         <p className="mb-6 max-w-3xl mx-auto text-lg text-[#444]">
           En{" "}
-          <span className="font-semibold text-[#FFD600]">
+          <span className="font-semibold text-[#ff0000]">
             Chatarrería Los Puentes
           </span>{" "}
           contamos con más de{" "}

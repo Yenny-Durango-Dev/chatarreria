@@ -32,12 +32,12 @@ function Footer() {
 
           {/* Teléfono */}
           <a
-            href="https://wa.me/573128136299"
+            href="https://wa.me/573017910078"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-[#FFD600] transition-colors"
           >
-            <Phone size={16} /> +57 312 8136299
+            <Phone size={16} /> +57 301 7910079
           </a>
 
           <p className="mt-3 opacity-80">🕒 Horarios</p>
@@ -62,26 +62,6 @@ function Footer() {
             ))}
           </ul>
         </div>
-      </div>
-
-      {/* Línea inferior con redes */}
-      <div className="border-t border-black/20 mt-8 pt-5 flex justify-center gap-6 opacity-90">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-white hover:bg-[#FFD600] hover:text-black transition cursor-pointer"
-        >
-          <Facebook size={20} />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-white hover:bg-[#FFD600] hover:text-black transition cursor-pointer"
-        >
-          <Instagram size={20} />
-        </a>
       </div>
     </footer>
   );

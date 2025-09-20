@@ -20,7 +20,7 @@ const Navbar = () => {
         <div
           className="text-2xl font-extrabold tracking-wide text-[#2E7D32]"
         >
-          Chatarrería Los Puentes
+          Chatarrería Los Puentes - 24 horas
         </div>
 
         {/* Links desktop */}
