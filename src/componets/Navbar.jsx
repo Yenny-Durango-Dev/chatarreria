@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
+// Importa tu logo así (ajusta la ruta a tu proyecto):
+import logo from "../../public/LogoChatarreria.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +18,16 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <nav className="flex items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <div
-          className="text-2xl font-extrabold tracking-wide text-[#2E7D32]"
-        >
-          Chatarrería Los Puentes - 24 horas
+        {/* Logo + nombre */}
+        <div className="flex items-center gap-3">
+          <img
+            src="../../public/LogoChatarreria.png" // <-- cámbialo cuando importes tu logo
+            alt="Logo"
+            className="w-18 h-18 object-contain transition-transform duration-300 hover:scale-110"
+          />
+          <span className="text-xl md:text-2xl font-extrabold tracking-wide text-[#2E7D32]">
+            Chatarrería Los Puentes - 24 horas
+          </span>
         </div>
 
         {/* Links desktop */}
