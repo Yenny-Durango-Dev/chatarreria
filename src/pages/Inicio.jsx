@@ -78,7 +78,7 @@ const Inicio = () => {
         <div className="mt-10 flex justify-center gap-6 flex-wrap">
           {/* Botón principal */}
           <a
-            href="https://wa.me/573017910078?text=Hola,%20quiero%20una%20cotización%20de%20material"
+            href="https://wa.me/573042034373?text=Hola,%20quiero%20una%20cotización%20de%20material"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#2E7D32] text-white px-8 py-4 rounded-lg font-bold text-xl sm:text-2xl 
