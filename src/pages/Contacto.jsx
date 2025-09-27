@@ -55,12 +55,14 @@ function Contacto() {
             <li className="flex items-center gap-4">
               <Mail className="w-8 h-8 text-[#FFD600]" />
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=euklidezorozco@gmail.com&su=Consulta&body=Hola,%20quisiera%20más%20información."
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=chatarrerialospuentes312@gmail.com
+&su=Consulta&body=Hola,%20quisiera%20más%20información."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FFD600] break-words"
               >
-                euklidezorozco@gmail.com
+                chatarrerialospuentes312@gmail.com
+
               </a>
             </li>
 
@@ -73,7 +75,7 @@ function Contacto() {
                 rel="noopener noreferrer"
                 className="hover:text-[#FFD600] break-words"
               >
-                Cl. 57b #54-37, La Candelaria, Medellín, Antioquia
+                Cl. 57b #54-151, La Candelaria, Medellín, Antioquia
               </a>
             </li>
 

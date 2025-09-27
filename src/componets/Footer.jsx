@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-[#2E7D32] text-white mt-12 border-t border-black/20 shadow-inner">
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 gap-12 text-center">
-        
+
         {/* Columna 1: Info empresa */}
         <div>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 text-white leading-snug">
@@ -31,7 +31,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
           >
-            <MapPin size={28} /> Cl. 57b #54-37, La Candelaria, Medellín, Antioquia
+            <MapPin size={28} /> Cl. 57b #54-151, La Candelaria, Medellín, Antioquia
           </a>
 
           {/* WhatsApp */}
@@ -54,10 +54,12 @@ function Footer() {
 
           {/* Correo */}
           <a
-            href="mailto:euklidezorozco@gmail.com"
+            href="mailto:chatarrerialospuentes312@gmail.com
+"
             className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
           >
-            <Mail size={28} /> euklidezorozco@gmail.com
+            <Mail size={28} /> chatarrerialospuentes312@gmail.com
+
           </a>
 
           {/* Horarios */}
