@@ -70,7 +70,7 @@ function Contacto() {
             <li className="flex items-center gap-4">
               <MapPin className="w-8 h-8 text-[#FFD600]" />
               <a
-                href="https://www.google.com/maps?q=Cl.+57b+%2354-37,+La+Candelaria,+Medellin,+Antioquia"
+                href="https://www.google.com/maps?q=Cl.+57b+%2354-151,+La+Candelaria,+Medellin,+Antioquia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#FFD600] break-words"

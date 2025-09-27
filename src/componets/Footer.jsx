@@ -26,7 +26,7 @@ function Footer() {
 
           {/* Dirección */}
           <a
-            href="https://www.google.com/maps?q=Cl.+57b+%2354-37,+La+Candelaria,+Medellín,+Antioquia"
+            href="https://www.google.com/maps?q=Cl.+57b+%2354-151,+La+Candelaria,+Medellín,+Antioquia"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
