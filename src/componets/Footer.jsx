@@ -3,17 +3,17 @@ import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 function Footer() {
   return (
     <footer className="bg-[#2E7D32] text-white mt-12 border-t border-black/20 shadow-inner">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 gap-12 text-center">
-
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        
         {/* Columna 1: Info empresa */}
         <div>
           <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 text-white leading-snug">
             Chatarrería Los Puentes
           </h2>
-          <p className="text-xl sm:text-2xl opacity-90 leading-relaxed">
+          <p className="text-lg sm:text-xl opacity-90 leading-relaxed">
             Reciclamos metales con responsabilidad ambiental.
           </p>
-          <p className="text-lg sm:text-xl mt-4 opacity-70">
+          <p className="text-sm sm:text-base mt-4 opacity-70">
             © 2025 Chatarrería Los Puentes. <br />Todos los derechos reservados.
           </p>
         </div>
@@ -24,47 +24,50 @@ function Footer() {
             📞 Contacto
           </h3>
 
-          {/* Dirección */}
-          <a
-            href="https://www.google.com/maps?q=Cl.+57b+%2354-151,+La+Candelaria,+Medellín,+Antioquia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
-          >
-            <MapPin size={28} /> Cl. 57b #54-151, La Candelaria, Medellín, Antioquia
-          </a>
+          <ul className="space-y-4 text-lg sm:text-xl">
+            <li>
+              <a
+                href="https://www.google.com/maps?q=Cl.+57b+%2354-151,+La+Candelaria,+Medellín,+Antioquia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-[#FFD600] transition-colors justify-center md:justify-start"
+              >
+                <MapPin size={22} /> Cl. 57b #54-151, La Candelaria, Medellín
+              </a>
+            </li>
 
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/573042034373"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
-          >
-            <Phone size={28} /> WhatsApp: +57 304 2034373
-          </a>
+            <li>
+              <a
+                href="https://wa.me/573042034373"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-[#FFD600] transition-colors justify-center md:justify-start"
+              >
+                <Phone size={22} /> WhatsApp: +57 304 2034373
+              </a>
+            </li>
 
-          {/* Llamar */}
-          <a
-            href="tel:+573233540080"
-            className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
-          >
-            <Phone size={28} /> Llamar: +57 323 3540080
-          </a>
+            <li>
+              <a
+                href="tel:+573233540080"
+                className="flex items-center gap-3 hover:text-[#FFD600] transition-colors justify-center md:justify-start"
+              >
+                <Phone size={22} /> Llamar: +57 323 3540080
+              </a>
+            </li>
 
-          {/* Correo */}
-          <a
-            href="mailto:chatarrerialospuentes312@gmail.com
-"
-            className="flex justify-center items-center gap-3 text-xl sm:text-2xl hover:text-[#FFD600] transition-colors mb-4"
-          >
-            <Mail size={28} /> chatarrerialospuentes312@gmail.com
+            <li>
+              <a
+                href="mailto:chatarrerialospuentes312@gmail.com"
+                className="flex items-center gap-3 hover:text-[#FFD600] transition-colors justify-center md:justify-start"
+              >
+                <Mail size={22} /> chatarrerialospuentes312@gmail.com
+              </a>
+            </li>
+          </ul>
 
-          </a>
-
-          {/* Horarios */}
-          <div className="mt-6 text-xl sm:text-2xl">
-            <p className="opacity-80">🕒 Horarios</p>
+          <div className="mt-6 text-lg sm:text-xl opacity-90">
+            <p>🕒 Horarios</p>
             <p>Lunes - Domingo</p>
             <p className="font-semibold">Servicio 24/7</p>
           </div>
@@ -75,13 +78,13 @@ function Footer() {
           <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-white">
             🔗 Enlaces
           </h3>
-          <ul className="space-y-5">
+          <ul className="space-y-4">
             {["inicio", "servicios", "precios", "nosotros", "contacto"].map(
               (item) => (
                 <li key={item}>
                   <a
                     href={`#${item}`}
-                    className="cursor-pointer relative text-xl sm:text-2xl hover:text-[#FFD600] transition-colors group"
+                    className="cursor-pointer relative text-lg sm:text-xl hover:text-[#FFD600] transition-colors group"
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                     <span className="absolute left-0 -bottom-1 w-0 h-1 bg-[#FFD600] transition-all group-hover:w-full"></span>

@@ -30,13 +30,13 @@ const Inicio = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % imagenes.length);
-    }, 4000); // cambia cada 4 segundos
+    }, 5000); // cambia cada 5s
     return () => clearInterval(interval);
   }, [imagenes.length]);
 
   return (
-    <section id="inicio" className="relative bg-white">
-      {/* Imagen */}
+    <section id="inicio" className="relative bg-white pt-24 sm:pt-28">
+      {/* Fondo con carrusel */}
       <div className="absolute inset-0">
         {imagenes.map((img, i) => (
           <img
@@ -48,42 +48,39 @@ const Inicio = () => {
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-black/45"></div>
+        {/* Capa oscura para contraste */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
       </div>
 
-      {/* Contenido */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 text-center">
+      {/* Contenido principal */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
         {/* Título */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg leading-snug">
-          Reciclaje de Metales con Confianza
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-xl leading-snug max-w-5xl">
+          ♻️ Reciclaje de Metales con Confianza
         </h1>
 
         {/* Texto */}
-        <p className="mt-8 text-xl sm:text-2xl md:text-3xl text-white max-w-3xl mx-auto leading-relaxed">
+        <p className="mt-8 text-lg sm:text-2xl md:text-3xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
           En{" "}
-          <span className="font-bold text-[#FFD600]">
-            Chatarrería Los Puentes
-          </span>{" "}
-          compramos y reciclamos metales como cobre, bronce, aluminio, hierro y
-          también electrodomésticos como neveras, computadores, lavadoras y más.{" "}
+          <span className="font-bold text-[#FFD600]">Chatarrería Los Puentes</span> 
+          {" "}compramos y reciclamos metales como{" "}
+          <span className="font-semibold text-[#FFD600]">cobre, bronce, aluminio, hierro</span>{" "}
+          y electrodomésticos (neveras, computadores, lavadoras y más).  
           <br />
-          Servicio a domicilio los{" "}
-          <span className="text-[#FFD600] font-extrabold">
-            7 días de la semana, las 24 horas del día
-          </span>{" "}
-          con los mejores precios.
+          <span className="text-[#FFD600] font-extrabold">Servicio 24/7 a domicilio</span>{" "}
+          con precios justos y confianza.
         </p>
 
         {/* Botones */}
-        <div className="mt-10 flex justify-center gap-6 flex-wrap">
+        <div className="mt-12 flex flex-col sm:flex-row gap-6">
           {/* Botón principal */}
           <a
             href="https://wa.me/573042034373?text=Hola,%20quiero%20una%20cotización%20de%20material"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#2E7D32] text-white px-8 py-4 rounded-lg font-bold text-xl sm:text-2xl 
+            className="bg-[#2E7D32] text-white px-10 py-4 rounded-md font-bold text-xl sm:text-2xl 
                        shadow-lg hover:bg-[#FFD600] hover:text-black 
-                       transition cursor-pointer"
+                       transform hover:scale-105 transition-all duration-300"
           >
             📲 Realizar venta
           </a>
@@ -91,10 +88,10 @@ const Inicio = () => {
           {/* Botón secundario */}
           <a
             href="#contacto"
-            className="border-4 border-[#FFD600] text-[#FFD600] px-8 py-4 
-                       rounded-lg font-bold text-xl sm:text-2xl shadow-lg 
+            className="border-4 border-[#FFD600] text-[#FFD600] px-10 py-4 rounded-md 
+                       font-bold text-xl sm:text-2xl shadow-lg 
                        hover:bg-[#FFD600] hover:text-black 
-                       transition cursor-pointer"
+                       transform hover:scale-105 transition-all duration-300"
           >
             ⚡ Contacto rápido
           </a>
