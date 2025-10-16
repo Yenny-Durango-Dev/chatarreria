@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Nevera from "../assets/nevera.png";
-import Lavadora from "../assets/lavadora.png";
-import Portatil from "../assets/portatil.png";
-import Televisor from "../assets/televisor.png";
-import Electrodomesticos from "../assets/electrodomesticos.png";
-import Metales from "../assets/metales.png";
-import Construccion from "../assets/construccion.png";
-import Cobre from "../assets/cobre.png";
-import Aluminio from "../assets/aluminio.png";
-import Hierro from "../assets/hierro.png";
+import Nevera from "../assets/img_chatarreria_nevera_27.webp";
+import Lavadora from "../assets/img_chatarreria_lavadora_24.webp";
+import Portatil from "../assets/img_chatarreria_computador_28.webp";
+import Televisor from "../assets/img_chatarreria_televisor_5.webp";
+import Electrodomesticos from "../assets/img_chatarreria_10.webp";
+import Metales from "../assets/img_chatarreria_11.webp";
+import Construccion from "../assets/img_chatarreria_12.webp";
+import Cobre from "../assets/img_chatarreria_13.webp";
+import Aluminio from "../assets/img_chatarreria_14.webp";
+import Hierro from "../assets/img_chatarreria_15.webp";
 
 const materialesExtra = [
   { nombre: "Neveras y Congeladores", img: Nevera, descripcion: "Para chatarra y reciclaje" },

@@ -1,8 +1,8 @@
 import React from "react";
-import Servicio1 from "../assets/servicio1.png";
-import Servicio2 from "../assets/servicio2.png";
-import Servicio3 from "../assets/servicio3.png";
-import Servicio4 from "../assets/servicio4.png";
+import Servicio1 from "../assets/img_chatarreria_1.webp";
+import Servicio2 from "../assets/img_chatarreria_2.webp";
+import Servicio3 from "../assets/img_chatarreria_3.webp";
+import Servicio4 from "../assets/img_chatarreria_4.webp";
 
 function Servicios() {
   const servicios = [

@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import Chatarra1 from "../assets/chatarra1.png";
-import Chatarra2 from "../assets/chatarra2.jpg";
-import Chatarra3 from "../assets/chatarra3.jpg";
-import Chatarra4 from "../assets/chatarra4.jpeg";
-import Chatarra5 from "../assets/chatarra5.jpeg";
-import Chatarra6 from "../assets/chatarra6.jpeg";
-import Chatarra7 from "../assets/chatarra7.jpeg";
-import Chatarra8 from "../assets/chatarra8.jpeg";
-import Chatarra9 from "../assets/chatarra9.jpeg";
-import Chatarra10 from "../assets/chatarra10.jpeg";
-import Chatarra11 from "../assets/chatarra11.jpeg";
+import Chatarra1 from "../assets/img_chatarreria_16.webp";
+import Chatarra2 from "../assets/img_chatarreria_17.webp";
+import Chatarra3 from "../assets/img_chatarreria_18.webp";
+import Chatarra4 from "../assets/img_chatarreria_19.webp";
+import Chatarra5 from "../assets/img_chatarreria_20.webp";
+import Chatarra6 from "../assets/img_chatarreria_21.webp";
+import Chatarra7 from "../assets/img_chatarreria_22.webp";
+import Chatarra8 from "../assets/img_chatarreria_23.webp";
+import Chatarra9 from "../assets/img_chatarreria_15.webp";
+import Chatarra10 from "../assets/img_chatarreria_25.webp";
+import Chatarra11 from "../assets/img_chatarreria_26.webp";
 
 const Inicio = () => {
   const imagenes = [
