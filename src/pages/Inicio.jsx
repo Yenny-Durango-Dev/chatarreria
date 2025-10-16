@@ -9,7 +9,6 @@ import Chatarra7 from "../assets/img_chatarreria_22.webp";
 import Chatarra8 from "../assets/img_chatarreria_23.webp";
 import Chatarra9 from "../assets/img_chatarreria_15.webp";
 import Chatarra10 from "../assets/img_chatarreria_25.webp";
-import Chatarra11 from "../assets/img_chatarreria_26.webp";
 
 const Inicio = () => {
   const imagenes = [
@@ -23,57 +22,67 @@ const Inicio = () => {
     Chatarra8,
     Chatarra9,
     Chatarra10,
-    Chatarra11,
   ];
+
   const [index, setIndex] = useState(0);
 
+  // Cambiar imagen cada 5s
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % imagenes.length);
-    }, 5000); // cambia cada 5s
+    }, 5000);
     return () => clearInterval(interval);
   }, [imagenes.length]);
 
   return (
-    <section id="inicio" className="relative bg-white pt-24 sm:pt-28">
-      {/* Fondo con carrusel */}
+    <section id="inicio" className="relative bg-white pt-24 sm:pt-28 overflow-hidden">
+      {/* Fondo del carrusel */}
       <div className="absolute inset-0">
-        {imagenes.map((img, i) => (
-          <img
-            key={i}
-            src={img}
-            alt={`Chatarra ${i + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              i === index ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
+        {/* Solo renderizamos la imagen actual y la siguiente (menos trabajo para el navegador) */}
+        {imagenes.map((img, i) => {
+          const isActive = i === index;
+          return (
+            <img
+              key={i}
+              src={img}
+              alt={`Chatarra ${i + 1}`}
+              loading={isActive ? "eager" : "lazy"}  // carga prioritaria solo para la primera
+              decoding="async"
+              fetchpriority={isActive ? "high" : "low"}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+                isActive ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                transitionDelay: isActive ? "0s" : "0s",
+              }}
+            />
+          );
+        })}
+
         {/* Capa oscura para contraste */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
       </div>
 
       {/* Contenido principal */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-        {/* Título */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-xl leading-snug max-w-5xl">
           ♻️ Reciclaje de Metales con Confianza
         </h1>
 
-        {/* Texto */}
         <p className="mt-8 text-lg sm:text-2xl md:text-3xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
           En{" "}
-          <span className="font-bold text-[#FFD600]">Chatarrería Los Puentes</span> 
-          {" "}compramos y reciclamos metales como{" "}
-          <span className="font-semibold text-[#FFD600]">cobre, bronce, aluminio, hierro</span>{" "}
+          <span className="font-bold text-[#FFD600]">Chatarrería Los Puentes</span>{" "}
+          compramos y reciclamos metales como{" "}
+          <span className="font-semibold text-[#FFD600]">
+            cobre, bronce, aluminio, hierro
+          </span>{" "}
           y electrodomésticos (neveras, computadores, lavadoras y más).  
           <br />
           <span className="text-[#FFD600] font-extrabold">Servicio 24/7 a domicilio</span>{" "}
           con precios justos y confianza.
         </p>
 
-        {/* Botones */}
         <div className="mt-12 flex flex-col sm:flex-row gap-6">
-          {/* Botón principal */}
           <a
             href="https://wa.me/573042034373?text=Hola,%20quiero%20una%20cotización%20de%20material"
             target="_blank"
@@ -85,7 +94,6 @@ const Inicio = () => {
             📲 Realizar venta
           </a>
 
-          {/* Botón secundario */}
           <a
             href="#contacto"
             className="border-4 border-[#FFD600] text-[#FFD600] px-10 py-4 rounded-md 
