@@ -46,15 +46,12 @@ const Inicio = () => {
               key={i}
               src={img}
               alt={`Chatarra ${i + 1}`}
-              loading={isActive ? "eager" : "lazy"}  // carga prioritaria solo para la primera
+              loading={i === 0 ? "eager" : "lazy"}       // 👈 primera imagen sin lazy load
               decoding="async"
-              fetchpriority={isActive ? "high" : "low"}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
-                isActive ? "opacity-100" : "opacity-0"
-              }`}
-              style={{
-                transitionDelay: isActive ? "0s" : "0s",
-              }}
+              fetchpriority={i === 0 ? "high" : "low"}  // 👈 prioridad alta para la primera
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${isActive ? "opacity-100" : "opacity-0"
+                }`}
+              style={{ transitionDelay: isActive ? "0s" : "0s" }}
             />
           );
         })}
@@ -76,7 +73,7 @@ const Inicio = () => {
           <span className="font-semibold text-[#FFD600]">
             cobre, bronce, aluminio, hierro
           </span>{" "}
-          y electrodomésticos (neveras, computadores, lavadoras y más).  
+          y electrodomésticos (neveras, computadores, lavadoras y más).
           <br />
           <span className="text-[#FFD600] font-extrabold">Servicio 24/7 a domicilio</span>{" "}
           con precios justos y confianza.

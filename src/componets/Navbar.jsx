@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
-            src="/LogoChatarreria.png"
+            src="/LogoChatarreria.webp"
             alt="Logo"
             className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
           />
